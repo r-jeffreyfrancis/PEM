@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/styles.css" rel="stylesheet">
+    <script src="static/js/angular.js"></script>
+
+</head>
+
+<body>
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+            <h3 class="masthead-brand">Project En Masse</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="/">Home</a>
+                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="/features">Features</a>
+            </nav>
+            </div>
+        </header>
+        
+        <main role="main" class="inner cover">
+            <div class="image_inline">
+                <img src="{{url_for('static', filename='assets/group-conversation.svg')}}" width="600">
+            </div>
+            <div class="text_inline">
+                <h1 class="cover-heading">Improve dialogue</h1>
+                <p class="lead">Project En Masse is an interactive AI app that facilitates large-scale discussions by consolidating similar topics through content visualization and sentiment analysis</p>
+                <p class="lead">
+                <a href="/features" class="btn btn-lg btn-primary">Try it now</a>
+                </p>
+            </div>
+        </main>
+        
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+            <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
