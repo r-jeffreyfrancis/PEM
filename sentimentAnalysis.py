@@ -208,7 +208,6 @@ def topicModeling (corpus, dictionary):
   
     topicModel = pyLDAvis.gensim.prepare(ldamodel, corpus, dictionary)
     
-    
     pyLDAvis.save_html(topicModel, 'templates/visualization.html')
     pyLDAvis.show(topicModel)
 
