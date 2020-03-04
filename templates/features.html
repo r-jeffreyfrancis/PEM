@@ -25,20 +25,24 @@
             <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link" href="/">Home</a>
                 <a class="nav-link" href="/about">About</a>
-                <a class="nav-link active" href="/features">Features</a>
+                <a class="nav-link active" href="/features">Visualize</a>
             </nav>
             </div>
         </header>
         
         <main role="main" class="inner cover">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Start with the link of a tweet">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="tweet-link">Visualize Now</button>
-              </div>
+                <input type="text" class="form-control" placeholder="Start with the link of a tweet" name="keyword">
+                <div class="input-group-append">
+                <a href="/result" class="btn btn-primary">Visualize Now</a>
             </div>
-            <br>
-            <img width="320" class="center" src="{{url_for('static', filename='assets/search.svg')}}">
+                    <!-- <button class="btn btn-outline-secondary" id="tweet-link" type="submit" name="keyword" href="/result">Visualize Now</button> -->
+              </div>
+              <br>
+              <img width="320" class="center" src="{{url_for('static', filename='assets/search.svg')}}">
+            </div>
+            
+            
         </main>
         
         <footer class="mastfoot mt-auto">

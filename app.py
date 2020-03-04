@@ -1,11 +1,9 @@
-from flask import Flask,render_template
-from flask_bootstrap import Bootstrap
-
-import sentimentAnalysis
+from flask import Flask,render_template, request
+# from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
-bootstrap = Bootstrap(app)
-
+# bootstrap = Bootstrap(app)
+keyword = ""
 
 @app.route("/")
 def landing():
@@ -16,9 +14,17 @@ def about():
 @app.route("/features")
 def features():
     return render_template('features.html')
-# @app.route("/group-conversation.svg")
-# def groupconvo():
-#     return render_template('group-conversation.svg')
+# @app.route("/run", methods=['POST'])
+# def run():
+#     form = request.form
+#     if request.method == 'POST':
+#         keyword = request.form['keyword']
+#         import sentimentAnalysis
+#         sentimentAnalysis.main(keyword)
+#     return render_template('visualization.html')
+@app.route("/result")
+def result():
+    return render_template('pre_loaded_vis.html')
 
 
 if __name__ == "__main__":

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# from app import keyword
 """
 Spyder Editor
 
@@ -8,6 +9,13 @@ This is a temporary script file.
 import twitter
 import csv
 import pickle
+import sys
+import imp
+
+
+
+testDataSet = ""
+search_term = ""
 
 # initialize api instance
 twitter_api = twitter.Api(consumer_key='CkFtH6uSH8WAtK2ZXzu2xOD1t',
@@ -45,11 +53,28 @@ def buildTestSet(data, new):
 # ------------------------------------------------------------------------
 
 search_term = input("Enter a search keyword: ")
+"""
+MAIN
+"""
+# def main(arg):
+# if __name__ == '__main__':
+#     print("Passed in search term")
+#     search_term = sys.argv[1]
+#     print(search_term)
+#     main(search_term)
+    
 testDataSet = buildTestSet(search_term,1)
+    # print(testDataSet[0:4])
+
+# def main(search_term):
+#     import app
+#     search_term = app.keyword
+#     print(search_term)
+#     buildTestSet(search_term,1)
 #labledTestData = '/Users/r.jeffreyfrancis@ibm.com/Documents/projects/PEM/twitter-sentiment-analysis2/train.csv'
 #testDataSet = buildTestSet(labledTestData, 0)
 
-print(testDataSet[0:4])
+
 
 # ------------------------------------------------------------------------
 
@@ -179,13 +204,12 @@ def topicModeling (corpus, dictionary):
 
 #    x = ldamodel.show_topics() #show generated topics 
    
-    pyLDAvis.enable_notebook()
+    # pyLDAvis.enable_notebook()
   
     topicModel = pyLDAvis.gensim.prepare(ldamodel, corpus, dictionary)
-
-    # htmlVisualization = pyLDAvis.prepared_data_to_html(topicModel)
-    pyLDAvis.save_html(topicModel, 'templates/visualization.html')
     
+    
+    pyLDAvis.save_html(topicModel, 'templates/visualization.html')
     pyLDAvis.show(topicModel)
 
 #create dictionary

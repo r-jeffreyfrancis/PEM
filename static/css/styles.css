@@ -39,7 +39,13 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 50rem;
+}
+
+.cover-inner-container {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -98,19 +104,45 @@ body {
 }
 
 .image_inline {
-  width: 250px;
-  margin: 30px 30px 30px 0;
+  width: 32rem;
+  margin: 30px 60px 30px -128px;
   float: left;
 }
 
-.text_inline {
+/* .text_inline {
   display: inline;
-}
+} */
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.visualizations {
+  background-color: #fff;
+  margin-top: 2rem;
+  margin-left: -13.25rem;
+  margin-right: auto;
+  max-width: 75rem;
+}
+
+.margin-offset {
+  margin-right: -160px;
+}
+
+.margin-offset-heading {
+  margin-top: 6rem;
+  margin-right: -160px;
+}
+
+.content {
+  margin-right: -1rem;
+  display: inline;
+}
+
+.input-margin-offset {
+  margin-top: -4rem;
 }
 
 /*

@@ -24,19 +24,22 @@
             <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link" href="/">Home</a>
                 <a class="nav-link active" href="/about">About</a>
-                <a class="nav-link" href="/features">Features</a>
+                <a class="nav-link" href="/features">Visualize</a>
             </nav>
             </div>
         </header>
         
         <main role="main" class="inner cover">
-            <h4 class="cover-heading">About</h1>
-            <img src="/Users/jenny.pan@ibm.com/Documents/GitHub/PEM/templates/group-conversation.svg">
-            <p class="lead">Some description of the project</p>
-            <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary">Try it now</a>
-            </p>
-        </main>
+                <div class="image_inline">
+                    <img src="{{url_for('static', filename='assets/about.svg')}}" width="520">
+                </div>
+                <div class="content">
+                    <h1 class="cover-heading margin-offset-heading">Improve dialogue</h1>
+                    <p class="lead margin-offset">Project En Masse is an interactive AI app that facilitates large-scale discussions by consolidating similar topics through content visualization and sentiment analysis</p>
+                    <a href="/features" class="btn btn-lg btn-primary">Try it now</a>
+                    </p>
+                </div>
+            </main>
         
         <footer class="mastfoot mt-auto">
             <div class="inner">
